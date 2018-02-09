@@ -1,4 +1,4 @@
-package am.aua.aoop;
+package am.aua.aoop.model;
 
 import am.aua.aoop.model.Item;
 

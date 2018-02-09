@@ -1,9 +1,5 @@
 package am.aua.aoop.model;
 
-import am.aua.aoop.BidCatalog;
-import am.aua.aoop.ItemCatalog;
-import am.aua.aoop.UserCatalog;
-
 public class Auction {
     private BidCatalog bidCatalog;
     private UserCatalog userCatalog;

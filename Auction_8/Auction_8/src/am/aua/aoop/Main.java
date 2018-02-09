@@ -1,9 +1,7 @@
 package am.aua.aoop;
 
-import am.aua.aoop.model.Auction;
-import am.aua.aoop.model.User;
-
 import java.util.Scanner;
+import am.aua.aoop.model.*;
 
 public class Main {
     public static void main(String[] args){
