@@ -20,11 +20,14 @@ public class BidCatalog {
         bids.add(new Bid(userId, itemId, amount));
     }
 
+    //TODO
     public Bid getWinningBid(String itemId){
-        Bid winningBid = null;
+        String myItemID = itemId;
+        Bid winningBid = bids.get(0);
         double highestBid = 0;
         for(Bid bid: bids){
-            if(bid.getITEM_ID().equals(itemId) && bid.getAmount() > highestBid){
+            // the problem is in the if condition
+            if(bid.getITEM_ID().equals(myItemID) && bid.getAmount() > highestBid){
                 highestBid = bid.getAmount();
                 winningBid = bid;
             }

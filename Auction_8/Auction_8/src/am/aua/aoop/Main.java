@@ -30,7 +30,7 @@ public class Main {
             }
         }
 
-        String winnerName = userCatalog.getUser(auction.findWinner(itemID)).getUserName();
+        String winnerName = (userCatalog.getUser(auction.findWinner(itemID))).getUserName();
         System.out.println("Congratulations to the winner: " + winnerName);
     }
 

@@ -20,7 +20,7 @@ public class UserCatalog {
     }
 
     public User getUser(String userID) {
-        User user1 = null;
+        User user1 = users.get(0);
         for(User user : users)
         {
             if(user.getUSER_ID().equals(userID))
