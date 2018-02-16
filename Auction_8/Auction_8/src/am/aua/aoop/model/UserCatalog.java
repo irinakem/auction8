@@ -1,7 +1,5 @@
 package am.aua.aoop.model;
 
-import am.aua.aoop.model.User;
-
 import java.util.ArrayList;
 
 public class UserCatalog {
@@ -21,10 +19,19 @@ public class UserCatalog {
 
     public User getUser(String userID) {
         User user1 = users.get(0);
-        for(User user : users)
-        {
-            if(user.getUSER_ID().equals(userID))
-            {
+        for (User user : users) {
+            if (user.getUSER_ID().equals(userID)) {
+                user1 = user;
+            }
+        }
+
+        return user1;
+    }
+
+    public User getUserByName(String userName) {
+        User user1 = users.get(0);
+        for (User user : users) {
+            if (user.getUserName().equals(userName)) {
                 user1 = user;
             }
         }

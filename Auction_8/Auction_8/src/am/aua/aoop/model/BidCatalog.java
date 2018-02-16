@@ -1,10 +1,10 @@
 package am.aua.aoop.model;
 
-import am.aua.aoop.model.Bid;
-
 import java.util.ArrayList;
 
 public class BidCatalog {
+
+    int count = 0;
 
     private ArrayList<Bid> bids;
 
@@ -16,8 +16,11 @@ public class BidCatalog {
         return bids;
     }
 
-    public void createBid(String itemId, String userId, double amount){
-        bids.add(new Bid(userId, itemId, amount));
+    public int createBid(String itemId, String userId, double amount) {
+
+        count++;
+        bids.add(new Bid(userId, itemId, amount, count));
+        return count;
     }
 
     //TODO

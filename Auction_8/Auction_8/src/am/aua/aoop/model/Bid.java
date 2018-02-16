@@ -1,18 +1,21 @@
 package am.aua.aoop.model;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Bid{
+public class Bid implements Serializable {
     private final String USER_ID;
     private final String ITEM_ID;
     private final String BID_ID;
     private double amount;
+    private int count;
 
-    public Bid(String USER_ID, String ITEM_ID, double amount) {
+    public Bid(String USER_ID, String ITEM_ID, double amount, int count) {
         this.USER_ID = USER_ID;
         this.ITEM_ID = ITEM_ID;
         BID_ID = UUID.randomUUID().toString();
         this.amount = amount;
+        this.count = count;
     }
 
     public String getUSER_ID() {
@@ -29,6 +32,14 @@ public class Bid{
 
     public double getAmount() {
         return amount;
+    }
+
+    public double getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public void setAmount(double amount) {
