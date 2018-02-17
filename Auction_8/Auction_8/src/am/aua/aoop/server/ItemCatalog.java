@@ -1,6 +1,4 @@
-package am.aua.aoop.model;
-
-import am.aua.aoop.model.Item;
+package am.aua.aoop.server;
 
 import java.util.ArrayList;
 
@@ -29,4 +27,11 @@ public class ItemCatalog {
 
         return item1;
     }
+
+    public void populateWithDummyData(){
+        for (int i = 0; i < 20; i ++){
+            createItem("Item " + i, "desc", 100);
+        }
+    }
+
 }

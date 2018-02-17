@@ -1,7 +1,6 @@
-package am.aua.aoop;
+package am.aua.aoop.server;
 
 import java.util.Scanner;
-import am.aua.aoop.model.*;
 
 public class Main {
     public static void main(String[] args){

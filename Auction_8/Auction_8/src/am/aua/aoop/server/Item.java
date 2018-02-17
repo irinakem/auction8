@@ -1,4 +1,4 @@
-package am.aua.aoop.model;
+package am.aua.aoop.server;
 
 import java.util.UUID;
 

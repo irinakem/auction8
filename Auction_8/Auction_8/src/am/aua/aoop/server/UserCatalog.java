@@ -1,6 +1,4 @@
-package am.aua.aoop.model;
-
-import am.aua.aoop.model.User;
+package am.aua.aoop.server;
 
 import java.util.ArrayList;
 
@@ -30,5 +28,11 @@ public class UserCatalog {
         }
 
         return user1;
+    }
+
+    public void populateWithDummyData(){
+        for (int i = 0; i < 20; i ++){
+            createUser("User " + i);
+        }
     }
 }

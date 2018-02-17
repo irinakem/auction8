@@ -1,6 +1,4 @@
-package am.aua.aoop.model;
-
-import am.aua.aoop.model.Bid;
+package am.aua.aoop.server;
 
 import java.util.ArrayList;
 
