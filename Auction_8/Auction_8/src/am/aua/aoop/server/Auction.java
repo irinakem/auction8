@@ -9,6 +9,7 @@ public class Auction extends UnicastRemoteObject implements IServer{
     private UserCatalog userCatalog;
     private ItemCatalog itemCatalog;
 
+
     public Auction(BidCatalog bidCatalog, UserCatalog userCatalog, ItemCatalog itemCatalog) throws RemoteException{
         this.bidCatalog = bidCatalog;
         this.userCatalog = userCatalog;
@@ -19,7 +20,7 @@ public class Auction extends UnicastRemoteObject implements IServer{
         itemCatalog.createItem(name, description, startingPrice);
     }
 
-    public void addUser(String username){
+    public void addUser(String username) throws RemoteException{
         userCatalog.createUser(username);
     }
 
@@ -29,5 +30,10 @@ public class Auction extends UnicastRemoteObject implements IServer{
 
     public String findWinner(String itemId) throws RemoteException{
         return bidCatalog.getWinningBid(itemId).getUSER_ID();
+    }
+
+    public String getItem_ID(String name){
+        Item item = itemCatalog.getItem(name);
+        return item.getITEM_ID();
     }
 }

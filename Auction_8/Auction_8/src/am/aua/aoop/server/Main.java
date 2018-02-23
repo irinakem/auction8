@@ -1,9 +1,11 @@
 package am.aua.aoop.server;
 
+import javax.naming.NamingException;
+import java.rmi.RemoteException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws RemoteException, NamingException {
 
         UserCatalog userCatalog = new UserCatalog();
         ItemCatalog itemCatalog = new ItemCatalog();

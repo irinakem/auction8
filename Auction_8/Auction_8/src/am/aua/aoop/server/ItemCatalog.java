@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class ItemCatalog {
 
+
+
     private ArrayList<Item> items = new ArrayList<>();
 
     public ArrayList<Item> getItems() {

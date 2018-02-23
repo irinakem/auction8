@@ -9,6 +9,7 @@ public class Registry {
 
     public static void main(String[] args) {
         try {
+
             Auction auction = new Auction(new BidCatalog(), new UserCatalog(), new ItemCatalog());
             Context namingContext = new InitialContext();
             namingContext.bind("auction", auction);
