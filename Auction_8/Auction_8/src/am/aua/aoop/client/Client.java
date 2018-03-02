@@ -52,6 +52,8 @@ public class Client {
 
             auction.addBid(item_id, user.getUSER_ID(), 100);
 
+
+
         } catch (NotBoundException e) {
             e.printStackTrace();
         } catch (MalformedURLException e) {

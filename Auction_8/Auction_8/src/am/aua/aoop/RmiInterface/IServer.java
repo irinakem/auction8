@@ -1,4 +1,4 @@
-package am.aua.aoop.server;
+package am.aua.aoop.RmiInterface;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

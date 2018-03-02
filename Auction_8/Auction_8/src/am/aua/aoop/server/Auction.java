@@ -1,10 +1,12 @@
 package am.aua.aoop.server;
 
 
+import am.aua.aoop.RmiInterface.IServer;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class Auction extends UnicastRemoteObject implements IServer{
+public class Auction extends UnicastRemoteObject implements IServer {
     private BidCatalog bidCatalog;
     private UserCatalog userCatalog;
     private ItemCatalog itemCatalog;
